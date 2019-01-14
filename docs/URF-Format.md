@@ -89,7 +89,6 @@ The Entry Specifier byte MUST be `Z`, and the data contained MUST be the offset 
 
 In an environment with long names, the file extension SHOULD be `urf` followed by a period (`.`) and the compression method (i.e. `gz`, `lzma`, `xz`, `deflate`)
 In an environment with 8.3 names, the file extension MUST be one of the following:
-  * `UDZ` for DEFLATE
   * `UMA` for LZMA
   * `UXZ` for XZ
   * `UGZ` for Gunzip
