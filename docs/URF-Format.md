@@ -91,7 +91,7 @@ In an environment with long names, the file extension SHOULD be `urf` followed b
 In an environment with 8.3 names, the file extension MUST be one of the following:
   * `UMA` for LZMA
   * `UXZ` for XZ
-  * `UGZ` for Gunzip
+  * `UGZ` for Gzip
   * `UL4` for LZ4
   * `UB2` for BZip2
   
