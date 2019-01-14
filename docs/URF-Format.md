@@ -30,7 +30,7 @@ Character specifications such as `NULL` and `DC1` are part of US ASCII, unless o
 
 ## Arbitrary length integers
 
-Arbitrary length integers (ALIs) are a way of using as little space as possible. They MAY be over 64-bits in precision. ALIs are little endian. For each byte, add the value of the first seven bits, shifted by 7 times the number of characters currently read bits, to the the read value and repeat until the 8th bit is 0.
+Arbitrary length integers (ALIs) MAY be over 64-bits in precision. ALIs are little endian. For each byte, add the value of the first seven bits, shifted by 7 times the number of characters currently read bits, to the the read value and repeat until the 8th bit is 0.
 
 ## Signature
 
