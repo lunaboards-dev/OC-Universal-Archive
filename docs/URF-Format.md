@@ -10,7 +10,7 @@ There are many competing methods of exchanging large amounts of files, and many 
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
-All integers are unsigned arbitrary length integers as specified in [ALI-Format.md](ALI-Format.md), unless otherwise specified.
+All integers are unsigned arbitrary length integers as specified in the Document, unless otherwise specified.
 
 All strings are encoded with UTF-8, prepended with an integer corresponding to the length of the string in bytes.
 
@@ -27,6 +27,10 @@ Character specifications such as `NULL` and `DC1` are part of US ASCII, unless o
   * Extended Attributes: Data describing non-core attributes such as Permissions, Owner, Security, etc.
   * Producer: A program or process that generates data in this format.
   * Consumer: A program or process that consumes data in this format.
+
+## Arbitrary length integers
+
+Arbitrary length integers (ALIs) are a way of using as little space as possible. They MAY be over 64-bits in precision. ALIs are little endian. For each byte, add the value of the first seven bits, shifted by 7 times the number of characters currently read bits, to the the read value and repeat until the 8th bit is 0.
 
 ## Signature
 
