@@ -66,7 +66,7 @@ The Entry Specifier byte MUST be `F`, and the data contained MUST be the name as
 
 ## Entry type: Directory
 
-The Entry Specifier byte MUST be `F`, and the data contained MUST be the name as a string, followed by the Object ID and the Parent ID.
+The Entry Specifier byte MUST be `D`, and the data contained MUST be the name as a string, followed by the Object ID and the Parent ID.
 
 ## Entry type: Extended Attributes
 
